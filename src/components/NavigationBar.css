@@ -1,0 +1,116 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(76, 76, 239);
+    color: white;
+    position: relative; /* Ensure relative positioning for overlay */
+    z-index: 1; /* Ensure the navbar is above the overlay */
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    margin-left: 5px;
+    height: 40px;
+    display: inline;
+}
+
+nav {
+    display: flex;
+}
+
+nav > div {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    margin-left: 7px;
+    margin-right: 190px;
+}
+
+.custom-link {
+    display: inline;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav > div > span:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.search {
+    display: inline;
+    margin-left: auto;
+    margin-left: 190px;
+    padding: 9px;
+}
+
+.search input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.search button {
+    margin-left: 14px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Higher z-index to ensure the overlay covers other content */
+}
+
+.popup {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for popup */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1001; /* Ensure the popup appears above the overlay */
+}
+
+.popup-inner {
+    text-align: center;
+}
+
+.popup button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}

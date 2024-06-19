@@ -1,0 +1,31 @@
+
+  .side-nav {
+    display: flex; 
+    flex-direction: column; 
+    padding: 10px;
+    box-sizing: border-box;
+    
+    height: 100%; 
+  }
+  
+  .nav-section {
+    
+    margin-right:48px;
+    
+    padding:5px;
+  }
+  .side-nav-container {
+    height: calc(100vh - 58px); 
+    
+  }
+  .nav-section >p{
+    font-weight:bold;
+    font-size:20px;
+  }
+  .nav-list{
+    color:black;
+  }
+  li, ul{
+    color:black;
+  }
+  

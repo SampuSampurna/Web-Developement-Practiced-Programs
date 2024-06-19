@@ -1,0 +1,53 @@
+
+
+.goals-container {
+    padding: 20px;
+    margin-top: 18px;
+    width:60%;
+    margin-left:20%;
+}
+
+.goal-section {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #007bff;
+    
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+/* Styles for the disabled background */
+.disabled-background {
+  position: fixed;
+  top: 45px; /* Adjust according to your navigation bar height */
+  left: 0;
+  width: 100%;
+  height: calc(100% - 40px); /* Adjust to exclude the navigation bar */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 9998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the popup container */
+.popup-container {
+  background-color: white;
+  width:20%;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  
+  
+}
+#side-alert{
+    text-align: center;
+}
+

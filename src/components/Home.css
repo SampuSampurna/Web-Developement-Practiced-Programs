@@ -1,0 +1,109 @@
+
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    margin-top: 18px;
+}
+.heading{
+   text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2e4ead; 
+
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-heading{
+    
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2e4ead; 
+}
+
+.description {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555; 
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.quote-icon {
+    font-size: 24px;
+    color: #007bff; 
+    margin-right: 10px;
+}
+
+.quote {
+    font-size: 18px;
+    color: #666; 
+    font-style: italic;
+}
+
+.intro-image {
+    width: 300px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.intro-image:hover {
+    transform: scale(1.05);
+}
+
+.benefits-section {
+    margin-top: 50px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-section {
+    margin-top: 50px;
+}
+
+.feature-section .heading {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #2e4ead; 
+}
+
+.feature-section .description {
+    font-size: 18px;
+    color: #555; 
+    text-align: center;
+}
+.validate-btn{
+    float: right;
+    padding: 15px;
+    background-color: cornflowerblue;
+    border-radius: 4%;
+    border: none;
+    color:white;
+    cursor: pointer;
+}

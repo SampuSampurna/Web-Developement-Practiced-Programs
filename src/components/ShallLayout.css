@@ -1,0 +1,27 @@
+
+.shell-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .content-container {
+    display: flex;
+    flex: 1;
+  }
+  
+  .side-nav-container {
+    width: 20%; /* Width of the side navigation bar */
+    overflow-y: auto;
+  
+  }
+  
+  .dashboard-content {
+    flex: 1;
+    
+  }
+  
+  .with-side-nav {
+    margin-left: 25px; /* Adjust the margin as needed */
+  }
+  

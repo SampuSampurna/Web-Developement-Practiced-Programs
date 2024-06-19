@@ -1,0 +1,42 @@
+.settings {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:#007bff;
+    width: 300px;
+    margin: 190px auto;
+    color:white;
+    
+  }
+  
+  .settings h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align:center;
+    color:white;
+  }
+  
+  .settings label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .settings select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  .settings select:focus {
+    outline: none;
+    border-color: #007bff; /* Change border color on focus */
+  }
+  
+  .settings select option {
+    padding: 8px;
+  }
+  
