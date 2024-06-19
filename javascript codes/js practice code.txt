@@ -1,0 +1,206 @@
+1.Create an array of objects representing books, where each object contains title, author, and genre properties. Write a function filterByGenre that takes this array and a genre string as input and returns an array of book titles that belong to that genre.
+
+function filterByGenre(arr, genre) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].genre === genre) {
+            console.log(arr[i]);
+        }
+    }
+}
+2.Create an array of objects representing students, where each object contains name, age, and grades properties. Write a function getAverageGrade that takes this array as input and returns the average grade of all students
+
+function getAverageGrade(students) {
+    let sum = 0;
+    for (let i = 0; i < students.length; i++) {
+        sum += students[i].grades;
+    }
+    const avg = sum / students.length;
+    return avg;
+}
+
+3.Create an array of numbers. Write a function findMaxAndMin that takes this array as input and returns an object containing the maximum and minimum numbers in the array.
+
+function findMaxAndMin(arr){
+    let max=Math.max(...arr);
+    let min=Math.min(...arr);
+    return { max,min };
+}
+
+BASIC:
+
+Basic Questions:
+
+1.Object Creation: Write a function that creates an object representing a person with properties like name, age, and country. Use this function to create multiple person objects.
+
+function createPerson(name,age,gender,country){
+  person={};
+  person.name=name;
+  person.age=age;
+  person.gender=gender; 
+  person.country=country;
+  return person;
+}
+createPerson("sampu",20,"f","ind")
+
+2.Update Object Property: Write a function that takes an object, a property name, and a new value, and updates the specified property of the object with the new value.
+
+function updateProperty(person,editvalue,newvalue){
+    person.editvalue=newvalue;
+    return person; 
+}
+updateProperty(arr1,"age",25)
+
+
+3.Array Map and Objects: Given an array of person objects, use Array.map to create a new array containing only the names of the persons.
+
+arr=[ {name:"sampu",age:20,gender:"f"},
+      {name:"sree",age:20,gender:"f"},
+      {name:"sam",age:20,gender:"f"}]
+//using for loops
+let arr2=[]
+for (let i=0;i<arr1.length;i++){
+    let obj=arr1[i];
+    let name=obj.name;
+    arr2.push(name);
+}
+arr2
+//using Array.map
+let arr2 = arr.map(obj => obj.name);
+arr2
+
+
+4.DOM Manipulation with Objects: Create an HTML form with input fields for name, age, and country. Write JavaScript code to extract values from the form fields and create a person object with these values.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>simple form</title>
+
+</head>
+<body>
+<form>
+    <label for="name">name</label>
+    <input id="name" type="text">
+    <label for="age">age</label>
+    <input id="age" type="number">
+    <label for="country">country</label>
+    <input id="country" type="text">
+</form>
+<script>
+    document.getElementById("country").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let country = document.getElementById("country").value;
+            let array={name:name,age:age,country:country};
+                    console.log(array);
+            
+        }
+    });
+</script>
+
+</body>
+</html>
+
+
+
+5.Event Listener: Add an event listener to a button element using addEventListener, and log a message when the button is clicked.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>simple form</title>
+
+</head>
+<body>
+<button id="btn">click me</button>
+<p id="para"></p>
+<script>
+  document.getElementById("btn").addEventListener("click", function(){
+    document.getElementById("para").innerHTML="Hello Guys";
+  });
+
+</script>
+
+</body>
+</html>
+
+
+6.Query Selector: Use querySelector to select all elements with a specific class name and apply a CSS style to each selected element.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bdy">
+    <h1>this is heading1</h1>
+    <h2>this is heading2</h2>
+    <h3>this is heading3</h3>
+
+
+<script>
+    let ele = document.querySelector(".bdy");
+    ele.style.color="red";
+</script>
+</body>
+</html>
+
+
+
+7.DOM Element Removal: Write a function that removes a specified HTML element from the DOM when a button is clicked.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table Display</title>
+<link rel="stylesheet" href="table.css">
+</head>
+<body>
+<h1>remove specific html elemnt by using the click event and below is the button</h1>
+<button id="btn">click me</button>
+<h1 id="cntnt">after clicking the button this content will e deleted </h1>
+<script>
+    document.getElementById("btn").addEventListener("click",function(){
+        document.getElementById("cntnt").remove();
+    })
+</script>
+</body>
+</html>
+
+
+8.Toggle Class: Write a function that toggles a CSS class on and off for a selected HTML element when clicked.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devisce-width, initial-scale=1.0">
+<title>Toggle Class Example</title>
+<style>
+  .highlight {
+    background-color: yellow;
+  }
+</style>
+</head>
+<body>
+
+<p id="toggleElement" style="cursor: pointer;">Click me to toggle the class!</p>
+
+<script>
+document.getElementById("toggleElement").addEventListener("click", function() {
+  this.classList.toggle("highlight");
+});
+</script>
+
+</body>
+</html>
+
+

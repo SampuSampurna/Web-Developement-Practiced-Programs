@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flickity Carousel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css">
+
+  <link rel="stylesheet" href="flickity_selectedcell.css">
+</head>
+<body>
+  
+  <div class="middle">
+    <p class="symbol" onclick="prevSlide()">&lt;</p>
+  <!-- Flickity HTML init -->
+  <div class="carousel" data-flickity="{ &quot;wrapAround&quot;: true, &quot;initialIndex&quot;: 1 }">
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+  </div>
+  <p class="symbol" onclick="nextSlide()">&gt;</p>
+</div>
+<script src="flickity_selectedcell.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+</body>
+</html>

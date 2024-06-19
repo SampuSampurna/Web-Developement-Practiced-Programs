@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="registration.css">
+  
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="registration-container">
+      <div class="registration-header">
+        Register
+      </div>
+      <div class="registration-subtext">
+        Create your account. It's free and only takes a minute.
+      </div>
+      <form action="#" method="post">
+        <div class="column">
+          <div class="form-group" style="flex: 1;">
+            <input type="text" id="firstName" placeholder="First Name" required>
+          </div>
+          <div class="form-group" style="flex: 1;">
+            <input type="text" id="lastName" placeholder="Last Name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <input type="age" id="age" placeholder="age" required>
+        </div>
+        <div class="form-group">
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+        
+        <div class="checkbox-group">
+          <input type="checkbox" id="termsCheckbox" name="termsCheckbox" required>
+          <label for="termsCheckbox"><p><span style="color:black">I accept the </span><span style="color:green;">Terms of Use</span> <splan style="color:black">& </span><span style="color:green;">Privacy Policy.</span></p></label>
+        </div>
+        <button type="submit" class="register-button">Register Now</button>
+      </form>
+    </div>
+  
+  </div>
+  <div id="result"></div>
+</body>
+<script src="registration.js"></script>
+</html>

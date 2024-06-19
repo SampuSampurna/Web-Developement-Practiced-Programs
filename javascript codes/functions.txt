@@ -1,0 +1,209 @@
+FUNCTIONS
+
+JAVASCRIPT FUNCTION DEFINITIONS:
+ 
+defined with "function" keyword.
+two methods: 1.function declaration 2.function expression
+1.function declaration:
+function functionName(parameters){
+ //code to be executed ;  (semicolons are used to seperated excuteable statements)
+}
+function will be excuted only when it called or invoked 
+
+2.function expression:
+function expression can be stored in a variable
+ex1: const x=function (a,b) {return a*b};
+     let z=(4,3)
+above function is also known as anonymous function (without name)
+functions stored in variables do not need function names. they are always invokes(called) using the variable name.
+
+Function() constructor:
+functions can also be defined with a built in javascript function constructor called "function()"
+ex1: const myFunction=new Function("a","b","return a*b");
+     let x=myFunction(4,3);
+in the above example we used constructor but actually u dont need to add or use function constructor.
+above function without function constructor:
+ex1:const myFunction=function (a,b) {return a*b};
+    let x=myFunction(4,3);
+mostly u can avoid the new keyword 
+
+function Hoisting:
+first u called the function then u should declare
+ex1: myFunction(5);
+     function myFunction(y){
+        return y*y;
+     }
+note:functions defined using an expression are not hoisted.
+
+self-Invoking function:
+it is started excuted automatically without called.
+excuted automatically if the expression is followed by ().
+u should add paranthees around the function to indicate that it is a function expression
+ex1:(function() {
+        let x="Hello!!"; //I will invoke myself
+     })();
+it is called anonymous self invoking function(function without name)
+
+Functions can be used as values:
+ex:function myFunction(a,b){
+      return a*b;
+    }
+    let x=myFunction(4,3);
+
+functions can be used in expressions:
+ex: function myFunction(a, b) {
+       return a * b;
+    } 
+    let x = myFunction(4, 3) * 2;
+
+Functions are Objects:
+the type of operator in javascript returns "function" for functions.
+but in javascript functions can be described as objects
+javascript functions have both properties and methods
+ex1:arguments.length gives the no of arguments received when function was invoked
+function myFunction(a,b){
+   return arguments.length;
+ }
+ex2:toString() method retuns the function as a string:
+function myFunction(a, b) {
+  return a * b;
+}
+let text = myFunction.toString();
+
+Arrow Functions:
+it allows short syntax for writing function expressions
+u dont need function keyword, return keyword, curly brackets.
+ex: const x=(x,y)=>x*y;
+these are do not have their own this, not suited for object methods,it must defined before they are used 
+using const is best than var
+
+JAVASCRIPT FUNCTION PARAMETERS:
+
+function parameters and arguments:
+parameters: the names listed in the function definition
+arguments:the real values passed to (and receive by) the function
+ex:function myFunction(x,y){
+     return x*y;
+   }
+   let z=myFunction(4,5);
+parameters:x,y
+arguments:4,5
+
+Parameter rules:
+1.dont specify data types 
+2.dont perform type checking
+3.dont check the no of arguments
+
+Default Parameters:
+a function is called with missing arguments(less than declared), the missing values are set to undefined.
+sometimes it is acceptable, but aometimes it is better to assign a default value to the parameter
+ex: function myFunction(x,y){
+      if (y === undefined) {
+          y=2;
+       }
+     }
+
+Default Parameter Values:
+ex:function myFunction(x,y=10){
+        return x+y;
+    }
+    myFunction(5);
+
+Function Rest Parameter:
+ it allows indefinite no of argumets as an array
+ex: function sum(...args){
+       let sum=0;
+       for (let arg of args) sum+=arg;
+       return sum;
+    }
+    let x=sum(4,9,16,29);
+
+The Arguments Object:
+javascript functions have a buit in object called the arguments objects
+the argument objects contains an array of the argumetns used when the function was called(invoked)
+ex1:highest value in a list of numbers
+x = findMax(1, 123, 500, 115, 44, 88);
+function findMax() {
+  let max = -Infinity;
+  for (let i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+}
+ex2:sum all input values
+x = sumAll(1, 123, 500, 115, 44, 88);
+function sumAll() {
+  let sum = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
+note:If a function is called with too many arguments (more than declared), these arguments can be reached using the arguments object.
+
+JAVASCRIPT FUNCTION INVOCATION:
+
+Invoking a javascript function:
+code inside the function is not excuted when the function is declared it excutes only function is invoked common terms for invoked is call,start,excute.
+
+Invokeing a function as a function:
+ex: function myFunction(a,b){
+         return a*b;
+    }
+    myFunction(10,2);
+note:This is a common way to invoke a JavaScript function, but not a very good practice.Global variables, methods, or functions can easily create name conflicts and bugs in the global object.
+
+myFunction() and window.myFunction() is the same function
+ex: function myFunction(a, b) {
+       return a * b;
+    }
+    window.myFunction(10, 2); 
+
+this: this keyword refers to an object which object depends on how this is being invoked(used or called) this is not a variable. It is a keyword. You cannot change the value of this.
+
+The Global Object:
+when a function is called without an owner object, the value of this becomes the global object.in a web browser the global object is the browser window
+ex: let x=myFunction();  //x will be the window object
+    function myFunction(){
+       return this;
+    }
+
+note:Invoking a function as a global function, causes the value of this to be the global object. Using the window object as a variable can easily crash your program.
+
+Invoking a function as a method:
+u can define function as a object methods
+ex: const myObject = {
+      firstName:"John",
+      lastName: "Doe",
+      fullName: function () {
+         return this.firstName + " " + this.lastName;
+      }
+     }
+     myObject.fullName();  // Will return "John Doe"
+
+Invoking a function with a function constructor:
+If a function invocation is preceded with the new keyword, it is a constructor invocation.A constructor invocation creates a new object. The new object inherits the properties and methods from its constructor.
+The this keyword in the constructor does not have a value.
+The value of this will be the new object created when the function is invoked.
+ex:
+// This is a function constructor:
+function myFunction(arg1, arg2) {
+  this.firstName = arg1;
+  this.lastName  = arg2;
+}
+// This creates a new object
+const myObj = new myFunction("John", "Doe");
+// This will return "John"
+myObj.firstName;
+
+
+
+
+
+
+
+
+
+     

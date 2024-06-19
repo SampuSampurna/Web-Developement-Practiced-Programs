@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table Display</title>
+<link rel="stylesheet" href="table.css">
+</head>
+<body>
+<h1>remove specific html elemnt by using the click event and below is the button</h1>
+<button id="btn">click me</button>
+<h1 id="cntnt">tafter clicking the button this content will e deleted </h1>
+<script>
+    document.getElementById("btn").addEventListener("click",function(){
+        document.getElementById("cntnt").remove();
+    })
+</script>
+</body>
+</html>

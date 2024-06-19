@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>simple form</title>
+
+</head>
+<body>
+<form>
+    <label for="name">name</label>
+    <input id="name" type="text">
+    <label for="age">age</label>
+    <input id="age" type="number">
+    <label for="country">country</label>
+    <input id="country" type="text">
+</form>
+<script>
+    document.getElementById("country").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let country = document.getElementById("country").value;
+            let array={name:name,age:age,country:country};
+                    console.log(array);
+            
+        }
+    });
+</script>
+
+</body>
+</html>

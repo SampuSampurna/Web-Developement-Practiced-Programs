@@ -1,0 +1,76 @@
+
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; 
+    padding:20px;
+    
+
+}
+.carousel-cell, .symbol {
+    cursor:pointer;
+  }
+.middle {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    
+}
+
+.carousel-container {
+  position: relative; 
+}
+
+.carousel {
+  background: grey;
+  width:30%;
+  height:150px;
+}
+
+.carousel-cell {
+  width: 29%;
+  height: 100px;
+  margin-top: 6%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 6%;
+  background: #3eb489;
+  counter-increment: gallery-cell;
+}
+
+.carousel-cell.is-selected {
+  width:30%;
+  height:120px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.symbol{
+    padding:15px;
+    
+    font-size: 30px;
+    
+}
+
+
+.flickity-prev-next-button {
+  display: none;
+}
+
+
+.flickity-page-dots .dot {
+  background-color: #3eb489;
+}
+
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 100px;
+  font-size: 20px;
+  color: white;
+}

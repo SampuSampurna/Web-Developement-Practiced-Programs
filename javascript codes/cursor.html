@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Carousel</title>
+  <link rel="stylesheet" href="cursor.css">
+</head>
+<body>
+
+  <div class="middle">
+    <p class="symbol" onclick="prevSlide()">&lt;</p>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-cell">1</div>
+        <div class="carousel-cell">2</div>
+        <div class="carousel-cell">3</div>
+        <div class="carousel-cell hide">4</div>
+        <div class="carousel-cell hide">5</div>
+        <div class="carousel-cell hide">6</div>
+        <div class="carousel-cell hide">7</div>
+        <div class="carousel-cell hide">8</div>
+        <div class="carousel-cell hide">9</div>
+      </div>
+    </div>
+    <p class="symbol" onclick="nextSlide()">&gt;</p>
+  </div>
+  <!-- Container for the circles -->
+  <div class="circle-container"></div>
+  <script src="cursor.js"></script>
+</body>
+</html>
