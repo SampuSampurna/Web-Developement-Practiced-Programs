@@ -1,0 +1,23 @@
+Transitions:
+css trantisions allows you to vhange property values smoothly, over a given duration
+you must specify two thing:
+1.css property you want to add an effect to 
+2.the duration of the effect
+note:duration part is not specified, the transition will have no effect the default value is 0
+properties:
+1.transition-property:property of and css element
+2.transition-duration:duration of the effect
+3.transition-timing-function:specify the speed curve of transition effect
+    ease:slow start,then fast,then end slowly
+    linear:same speed from start to end
+    ease-in:slow start
+    ease-end:sloe end 
+    easein-ut:slow start and end
+    cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier
+4.transition-delaya:delay (in seconds) for transition effect
+  note: transition + transformation like transition:width 2s, height 2s. transform 2s;
+5.transition-shorthand:  transition: width 2s linear 1s;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s; 

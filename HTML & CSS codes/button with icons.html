@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #centeredDiv {
+            text-align: center;
+        }
+
+        .button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 200px;
+            margin: 10px;
+            padding: 15px;
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            color: #f0f0f0;
+            font-weight: bold;
+            font-size: large;
+            text-align: start;
+            box-shadow: 2px 2px 5px #888888;
+            position: relative; 
+        }
+
+        .btn1 {
+            background-color: #3a8a9e; 
+        }
+
+        .btn2 {
+            background-color: #6b005f; 
+        }
+
+        .btn3 {
+            background-color: #003366; 
+        }
+
+        
+        .button i {
+            background-color: rgba(255, 255, 255, 0.4); 
+            padding: 20px; 
+          border-radius: 5px;  
+          position: absolute; 
+            right:0; 
+            top: 50%;
+            left:70px; 
+            transform: translateY(-50%); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            margin-left: 60px;
+            margin-bottom: 20px;
+            height:11px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="centeredDiv">
+    <button class="button btn1"><span>Download</span><i class="material-icons">&#xe2c0;</i></button>
+    <button class="button btn2"><span>Share</span><i class="fas fa-share-alt"></i></button>
+    <button class="button btn3"><span>Like it</span><i class="far fa-heart"></i></button>
+</div>
+
+</body>
+</html>

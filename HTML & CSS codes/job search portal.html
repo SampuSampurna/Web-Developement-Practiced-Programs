@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Portal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: honeydew;
+        }
+
+        .top-bar {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            background-color:dimgray;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color:white;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: black;
+        }
+
+        .search-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .search-container input[type="text"],
+        .search-container button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .search-container button {
+            background-color: orange;
+            color: white;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .job-listing {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .job-details {
+            margin-bottom: 10px;
+        }
+
+        .apply-button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <h2>Job Search Portal</h2>
+</div>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Jobs</a>
+    <a href="#">Companies</a>
+    <a href="#">About us</a>
+    <a href="#">Contact</a>
+</nav>
+
+<h1>Find Your Dream Job</h1>
+
+<div class="search-container">
+    <input type="text" placeholder="Keywords">
+    <input type="text" placeholder="Location">
+    <input type="text" placeholder="Company">
+    <button>Search</button>
+</div>
+
+<h2 style="text-align: center; margin-top: 30px;">Latest Job Listings</h2>
+
+<div class="job-listing">
+    <div class="job-title">Web Developer</div>
+    <div class="job-details">Company: ABC Tech</div>
+    <div class="job-details">Location: India</div>
+    <div class="job-details">Description: Good Web Developer</div>
+    <button class="apply-button">Apply</button>
+</div>
+
+</body>
+</html>

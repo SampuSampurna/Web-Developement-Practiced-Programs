@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100hv;
+        }
+
+        form {
+            max-width: 550px;
+            margin: 0 auto;
+            margin-top:0;
+            margin-bottom: 10px;
+            margin-right:100px;                 
+        }
+
+        h4 {
+            color: green;
+            text-align: left;
+            margin-left: 10px;
+            margin-bottom: 10px; 
+            margin-right: 20px;               
+        }
+
+        label {
+            display: inline-block;
+            width: 150px; 
+            text-align: right;
+            
+            margin-bottom: 10px;
+           
+        }
+
+        input, select, textarea {
+            width: 350px;
+             
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            margin-left: 20px;
+            display: inline-block;
+        }
+
+                label[for="description"] {
+            vertical-align: top;
+            margin-top: 6px;
+        }
+        
+        img {
+            width: 200px;
+            height:200px;
+            margin-right: 450px;
+        }
+
+ </style>
+</head>
+<body>  
+    
+    <form>
+        <h4><i class="fa fa-info-circle" style="font-size:24px;color:green;font-style: italic;padding:15px;"></i>Project Information</h4>
+         
+        <label for="projectType">Project Type</label>
+        <input type="text" id="projectType" name="projectType" placeholder="ANSI | building | Microgrid Advisor"><br>
+
+        <label for="projectID">Project ID</label>
+        <input type="text" id="projectID" name="projectID" placeholder="EMD-PID-1964"><br>
+
+        <label for="orderNumber"> Order Number<i class="fa fa-info-circle info-icon" style="font-size:24px;color:Blue;font-style: italic;"></i> </label>
+        <input type="text" id="orderNumber" name="orderNumber" placeholder="3333333333333"><br>
+
+        <label for="projectName" >Project Name<span style="color:red;">*</span></label>
+        <input type="text" id="projectName" name="projectName"  placeholder="test v5"><br>
+
+        <label for="clientName" >Client Name<span style="color:red;">*</span></label>
+        <input type="text" id="clientName" name="clientName" placeholder="test v5"><br>
+
+        <label for="siteName">Site Name<span style="color:red;">*</span></label>
+        <input type="text" id="siteName" name="siteName" placeholder="test v5"><br>
+
+        <label for="currency" >Currency<span style="color:red;">*</span></label>
+        <select id="currency" name="currency">
+            <option value="usd">Dollars (US$)</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+           
+        </select><br>
+
+        <label for="temperatureUnit">Temperature Unit<span style="color:red;">*</span></label>
+        <select id="temperatureUnit" name="temperatureUnit">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+           
+        </select><br>
+
+   
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="2" placeholder="Description"></textarea><br>
+
+    </form>
+    <img src="D:\Web Development Practice\img1.jpg" alt="Your Image">
+
+</body>
+</html>

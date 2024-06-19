@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>box using flex</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin: 35px;
+   
+}
+.main-container {
+    border: 7px solid black;
+    padding: 10px;
+    height: 575px; 
+}
+.bluebox {
+    border: 5px solid DodgerBlue;
+    height: 40px;
+    margin-bottom: 5px; 
+}
+.row {  
+    display: flex;
+    flex-wrap: no-wrap;
+    background-color: white;
+    height: 507px;
+    padding: 3px;
+}
+.lside {
+    display: flex;
+    flex: 18%;
+    align-items: center;
+    height:100%;
+    flex-direction: column;
+    background-color: white;
+    border: 4px solid #6ca4c8;
+    margin-top: 5px; 
+    margin-right:10px;
+    position: relative; 
+}
+.rect {
+    
+    width: 65%;
+    border: 4px solid tomato;
+    margin-top: 25px; 
+    height: 30px;
+    box-sizing: border-box;
+    margin-left: 10px;
+} 
+.botleftbox,
+.botrightbox {
+    border: 4px solid blue;
+    height: 30px;
+    width: 20%; 
+    position: absolute; 
+    bottom: 5px; 
+}
+
+.botleftbox {
+    left: 2%; 
+}
+
+.botrightbox {
+    right: 2%; 
+}
+
+.rside {
+    display: flex;
+    flex: 82%;
+    background-color: white;
+    margin-top: 5px; 
+    flex-direction: column; 
+    align-items: center; 
+    position: relative; 
+}
+
+.circlebox {
+    display: flex;
+    padding: 2px;
+    height: 25%;
+    width: 98%; 
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border: 5px solid #cd853f;
+}
+
+.circlebox > div {
+    display: flex;
+    justify-content: space-between;
+    border: 4px solid red;
+    background-color: white;
+    width: 10%;
+    height: 70%;
+    border-radius: 45%;
+}
+
+.rectangle-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.rectlr {
+    width: 20%;
+    border: 5px solid red;
+    box-sizing: border-box;
+    height: 345px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.rectm {
+    width: 60%;
+    border: 5px solid white;
+    box-sizing: border-box;
+    height: 320px; 
+    padding: 5px;
+}
+
+.midcircle {
+    border: 5px solid black;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.midrect {
+    border: 5px solid black;
+    margin-top: 25px; 
+    height: 30px;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+
+.midrect1 {
+    width: 60%;
+}
+
+.midrect2 {
+    width: 70%;
+}
+
+.midrect3 {
+    width: 80%;
+}
+
+.midrect4 {
+    width: 90%;
+}
+
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+    .main-container {
+        height:780px;
+        width:400px; 
+    }
+    .lside {
+        flex-basis: auto; 
+        min-height: 250px; 
+    }
+    .circlebox {
+        flex-basis: auto; 
+        min-height: 70px; 
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="bluebox"></div>
+        <div class="row">
+            <div class="lside">
+                <div class="rect"></div> 
+                <div class="rect"></div> 
+                <div class="rect"></div> 
+                <div class="botleftbox"></div>
+                <div class="botrightbox"></div>  
+            </div>
+            <div class="rside">
+                <div class="circlebox">
+                    <div></div>
+                    <div></div>
+                    <div></div> 
+                    <div></div>
+                    <div></div>
+                    <div></div> 
+                </div>
+                <div class="rectangle-container">
+                    <div class="rectlr"></div>
+                    <div class="rectm"> 
+                        <div class="midcircle"></div>
+                        <div class="midrect midrect1"></div>
+                        <div class="midrect midrect2"></div>
+                        <div class="midrect midrect3"></div>
+                        <div class="midrect midrect4"></div>
+                    </div>
+                    <div class="rectlr"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

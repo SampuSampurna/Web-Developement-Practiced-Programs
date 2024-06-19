@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers - GeeksForGeeks</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color:aquamarine; 
+        }
+
+        h1 {
+            
+            color:green; 
+            padding: 20px;
+        }
+
+        .offer-container {
+            background-color:white; 
+            padding: 40px;
+            display: inline-block;
+            border-radius: 20px;
+            width:30%;
+            height:30%;
+            position: relative;
+        }
+
+        .inner-container {
+            background-color:blueviolet; 
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .offer-box {
+           
+            padding: 3px;
+            margin: 5px auto;
+            width: 400px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+            
+        }
+
+        .offer-box h1 {
+            font-size: 35px;
+            margin-top:1px;
+            color:deeppink; 
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+       .offer-box h1:hover{
+                font-size:50px;
+       }
+        .offer-box p {
+            margin-top:2px;
+            color:chartreuse; 
+            margin-bottom: 0;
+            font-size:20px;
+            font-weight: bold;
+        }
+        .offer-box p:hover{
+            font-size:45px;
+        }
+
+        .price-wrapper {
+            display: flex;
+            align-items: center;
+            background-color: white; 
+            padding: 10px;
+            
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            margin-right: 10px;
+            color: red; 
+        }
+
+        .discounted-price {
+            font-weight: bold;
+            color:blueviolet 
+        }
+
+        .offer-box button {
+            background-color:mediumvioletred; 
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 4px;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top:6px;
+        }
+
+        .offer-ribbon {
+            position: absolute;
+            top: 30px;
+            left: -10px;
+            width: 100px;
+            background-color: black; 
+            color: red; 
+            text-align: center;
+            transform: rotate(-50deg);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+        <h1>GeeksForGeeks</h1>
+    
+
+    <div class="offer-container">
+        <div class="inner-container">
+            <div class="offer-ribbon">Offer 20%</div>
+            <section class="offer-box">
+               
+                <h1>Special Offers</h1>
+                <p>Get 20-40% off</p>
+                <h3 style="color:white;">DSA SELF-PACED COURSE <br> Limited time offer! </h3>
+                
+                <div class="price-wrapper">
+                    <span class="original-price">&#8377;3999</span>
+                    <span class="discounted-price">&#8377;2499</span>
+                </div>
+                <button>Claim Offer</button>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>

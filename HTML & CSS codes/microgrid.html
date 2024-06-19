@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schneider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+
+        .header {
+            background-color: #f0f0f0;
+            padding: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .icon {
+            color: green;
+            margin: 2px;
+            font-size: 50px;
+        }
+
+        .header img {
+            width: 120px; 
+            height: 60px; 
+        }
+
+        .header p {
+            text-align: center;
+            color: #ff0000; 
+            margin: 0; 
+            flex: 1; 
+        }
+
+        .nav {
+            background-color: green;
+            display: flex;
+            align-items: center; 
+            height: 30px; 
+            padding: 7px; 
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            margin-right: 15px; 
+        }
+
+        .project-info {
+            margin-left: auto;
+            margin-top: 8px;
+            text-align: left;
+            color: white;
+            padding: 3px; 
+        }
+
+        .project-info p {
+            margin: 0; 
+        }
+
+        .content {
+            flex: 1; 
+            display: flex;
+            flex-direction: column; 
+        }
+
+        iframe {
+            flex: 1; 
+            width: 100%;
+            border: none;
+            overflow-y: auto; 
+        }
+
+        .dropdown-container {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            font-size: 25px;
+        }
+
+        .dropdown-container select {
+            margin-right: 22px;
+            border: none;  
+            font-size: 20px;  
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+          
+        }
+
+        .user-info i {
+            font-size: 24px;
+            
+            margin-right: 5px;
+        }
+          
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <i class="fa fa-align-justify" style="font-size:24px;color:green;padding:10px;"></i>
+        
+        <img src="D:\Web Development Practice\img1.jpg" alt="Your Image">
+        <p>Internal R&D use only.</p>
+        <div class="user-info">
+            <i class="fa fa-user"></i>
+            <h4 style="margin:10px;">Ramesh</h4>
+            <i class="fa fa-caret-down"></i>
+        </div>
+        <img src="D:\Web Development Practice\img2.png" alt="Another Image" class="right-icon">
+    </div>
+
+    <div class="nav">
+        <a href="information.html" target="contentFrame">Information</a>
+        <a href="#">Design</a>
+        <a href="#">Configure Use Case</a>
+        <a href="#">Systems</a>
+        <a href="#">B.O.M</a>
+        <a href="#">Deploy</a>
+        <a href="#">Generate Report</a>
+        <div class="project-info">
+            <p>PROJECT NAME: TEST V5</p>
+            <p>PROJECT TYPE: ANSI | BUILDING | MICROGRID ADV</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <iframe name="contentFrame" src="information.html"></iframe>
+    </div>
+
+</body>
+</html>

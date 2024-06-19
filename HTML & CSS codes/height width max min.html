@@ -1,0 +1,42 @@
+<!--
+width
+Width: It's how wide an element is on a webpage, like the width of a box.
+Max-width: This sets the maximum width an element can reach, like putting a limit on how wide that box can get.
+Min-width: It ensures that an element is never narrower than a certain width, like saying the box must be at least this wide.
+
+height:
+Height: It's the vertical size of an element on a webpage, like how tall a box is.
+Max-height: This sets the maximum height an element can reach, like putting a limit on how tall that box can get.
+Min-height: It ensures that an element is never shorter than a certain height, like saying the box must be at least this tall.
+-->
+<html>
+<head>
+<style>
+.box1{
+border:2px solid black;
+padding:4px;
+margin:4px;
+height:100px;
+width:200px;
+}
+.box2{
+border:2px solid black;
+padding:4px;
+margin:4px;
+height:100px;
+max-width:200px;
+}
+.midbox{
+border:2px solid black;
+padding:4px;
+
+height:100px;
+width:300px;
+}
+</style>
+</head>
+<body>
+<div class="box1"><div class="midbox"></div></div>
+<div class="box2"><div classs="midbox"></div></div>
+</body>
+</html>

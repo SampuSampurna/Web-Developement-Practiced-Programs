@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #E6E6FA; 
+        }
+
+        #calculator {
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: #ffffff; 
+          }
+
+        #display {
+            margin-bottom: 15px; 
+            text-align: right;
+            border: 2px solid white; 
+            border-radius: 4px;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .buttons button {
+            width: 100%;
+            height: 40px; 
+            border-radius:8px; 
+            background-color: #eee; 
+            cursor: pointer;
+            color: #333; 
+            font-weight: bold;
+             border: 2px solid #eee;
+        }
+
+        .buttons button.blue-text {
+            color: CornflowerBlue; 
+        }
+
+        .buttons button:hover {
+            background-color: #ddd; 
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display"><br>
+      
+        <div class="buttons">
+            <button class="operator blue-text" onclick="clearAll()">AC</button>
+            <button class="operator blue-text" onclick="deleteLastDigit()">DEL</button>
+            <button class="operator blue-text" onclick="appendOperator('%')">%</button>
+            <button class="operator blue-text" onclick="appendOperator('/')">/</button>
+
+            <button class="number" onclick="appendNumber(7)">7</button>
+            <button class="number" onclick="appendNumber(8)">8</button>
+            <button class="number" onclick="appendNumber(9)">9</button>
+            <button class="operator blue-text" onclick="appendOperator('*')">*</button>
+
+            <button class="number" onclick="appendNumber(4)">4</button>
+            <button class="number" onclick="appendNumber(5)">5</button>
+            <button class="number" onclick="appendNumber(6)">6</button>
+            <button class="operator blue-text" onclick="appendOperator('-')">-</button>
+
+            <button class="number" onclick="appendNumber(1)">1</button>
+            <button class="number" onclick="appendNumber(2)">2</button>
+            <button class="number" onclick="appendNumber(3)">3</button>
+            <button class="operator blue-text" onclick="appendOperator('+')">+</button>
+
+            <button class="number double-width" onclick="appendNumber(0)">0</button>
+            <button class="number double-width" onclick='appendNumber("00")'>00</button>
+            <button class="number double-width" onclick="appendNumber('.')">.</button>
+            <button class="operator equal-sign blue-text" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>

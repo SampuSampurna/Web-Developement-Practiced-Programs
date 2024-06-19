@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Buttons</title>
+<style>
+    
+   body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+   }
+    .container {
+        width: 600px;
+        height: 300px;
+        padding: 10px;
+        margin-top:190px;
+        background-color: antiquewhite;
+        
+    }
+
+    .row {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+
+    
+    .btn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border:none;
+    }
+
+    .primary1 {
+        background-color: #0008ff;
+        color: #fff;
+    }
+
+    .success1 {
+        background-color: #28a745;
+        color: #fff;
+    }
+
+    .info1 {
+        background-color: #1788b8;
+        color: #fff;
+    }
+
+    .warning1 {
+        background-color: #ff9307;
+        color: #fff;
+    }
+
+    .danger1 {
+        background-color: #dc3545;
+        color: #fff;
+    }
+    .btn2 {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .primary2 {
+        
+        color:#0008ff;
+        border:2px solid #0008ff;
+    }
+
+    .success2 {
+        color: #28a745;
+        border:2px solid #28a745;
+    }
+
+    .info2 {
+        color: #17a2b8;
+        border:2px solid #17a2b8;
+    }
+
+    .warning2 {
+        color: #ff9307;
+        border:2px solid #ff9307;
+    }
+
+    .danger2 {
+        color: #dc3545;
+        border:2px solid #dc3545;
+    }
+    .btn3 {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius:4px;
+        border:none;
+        font-weight: bold;
+    }
+    .btn4 {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius:25px;
+        border:none;
+        font-weight: bold;
+    }
+    .btn5 {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius:5px;
+        border:none;
+        font-weight: bold;
+    }
+    .btn1:hover,
+    .btn2:hover,
+    .btn3:hover,
+    .btn4:hover,
+    .btn5:hover {
+        background-color:#dc3545;
+        color:black;
+        font-style: italic;
+        font-weight:lighter;
+        border:10px double #fff;
+
+    }
+    
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <button class="btn1 primary1">PRIMARY</button>
+        <button class="btn1 success1">SUCCESS</button>
+        <button class="btn1 info1">INFO</button>
+        <button class="btn1 warning1">WARNING</button>
+        <button class="btn1 danger1">DANGER</button>
+    </div>
+    <div class="row">
+        <button class="btn2 primary2">PRIMARY</button>
+        <button class="btn2 success2">SUCCESS</button>
+        <button class="btn2 info2">INFO</button>
+        <button class="btn2 warning2">WARNING</button>
+        <button class="btn2 danger2">DANGER</button>
+    </div>
+    <div class="row">
+        <button class="btn3 primary1">PRIMARY</button>
+        <button class="btn3 success1">SUCCESS</button>
+        <button class="btn3 info1">INFO</button>
+        <button class="btn3 warning1">WARNING</button>
+        <button class="btn3 danger1">DANGER</button>
+    </div>
+    <div class="row">
+        <button class="btn4 primary1">PRIMARY</button>
+        <button class="btn4 success1">SUCCESS</button>
+        <button class="btn4 info1">INFO</button>
+        <button class="btn4 warning1">WARNING</button>
+        <button class="btn4 danger1">DANGER</button>
+    </div>
+    <div class="row">
+        <button class="btn5 primary1">PRIMARY</button>
+        <button class="btn5 success1">SUCCESS</button>
+        <button class="btn5 info1">INFO</button>
+        <button class="btn5 warning1">WARNING</button>
+        <button class="btn5 danger1">DANGER</button>
+    </div>
+</div>
+
+</body>
+</html>

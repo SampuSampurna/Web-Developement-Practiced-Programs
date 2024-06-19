@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #9370DB;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .registration-container {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    position: relative;
+  }
+
+  .registration-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .registration-subtext {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .column {
+    display: flex;
+    gap: 10px;
+  }
+
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin:0;
+    text-align: left;
+  }
+
+  .checkbox-group label {
+    margin-left: 5px;
+    color: #007bff;
+    
+  }
+
+  .login-link {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .login-link a {
+    text-decoration: underline;
+    color: green;
+  }
+
+  .register-button {
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    
+  }
+  .mandatory-text {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    margin-left: 5px;
+    display: none;
+    
+  }
+  .space-between-rows {
+    height: 20px; /* Adjust this value to increase or decrease the space between rows */
+}

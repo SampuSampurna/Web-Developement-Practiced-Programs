@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotating Arc</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .arc-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+
+  .arc {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-left: 1px solid yellow; 
+    animation: rotateArc 3s linear infinite;
+  }
+
+  @keyframes rotateArc {
+    0% {
+      transform: rotate(0deg);
+      border-left-color: yellow;
+    }
+    25% {
+      transform: rotate(360deg);
+      border-left-color: yellow;
+    }
+    26% {
+      transform: rotate(360deg);
+      border-left-color: red;
+    }
+    50% {
+      transform: rotate(720deg);
+      border-left-color: red;
+    }
+    51% {
+      transform: rotate(720deg);
+      border-left-color: blue;
+    }
+    75% {
+      transform: rotate(1080deg);
+      border-left-color: blue;
+    }
+    76% {
+      transform: rotate(1080deg);
+      border-left-color: green;
+    }
+    100% {
+      transform: rotate(1440deg);
+      border-left-color: green;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="arc-container">
+  <div class="arc"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeeksForGeeks Survey Form</title>
+    <style>
+        body {
+            background-color: green;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: white;
+            width: 40%; 
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: black;
+            font-size: bold;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        select {
+            appearance: none;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            display: inline-block; 
+            vertical-align: middle;
+            margin-right: 5px; 
+        }
+
+        input[type="checkbox"] + label,
+        input[type="radio"] + label {
+            display: inline-block; 
+            vertical-align: middle; 
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block; 
+            width: 100%; 
+        }
+
+        button[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>GeeksForGeeks Survey Form</h1>
+    <div class="container">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" placeholder="Enter your age"><br>
+
+            <label for="description">Which option best describes you?</label>
+            <select id="description" name="description">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label>Would you recommend GeeksForGeeks to a friend?</label>
+            <div>
+                <input type="radio" id="yes" name="recommendation" value="yes">
+                <label for="yes">Yes</label><br>
+
+                <input type="radio" id="no" name="recommendation" value="no">
+                <label for="no">No</label><br>
+
+                <input type="radio" id="maybe" name="recommendation" value="maybe">
+                <label for="maybe">Maybe</label>
+            </div><br>
+
+            <label>Languages and Frameworks known (Check all that apply):</label>
+            <div>
+                <input type="checkbox" id="c" name="language" value="C">
+                <label for="c">C</label><br>
+
+                <input type="checkbox" id="cpp" name="language" value="C++">
+                <label for="cpp">C++</label><br>
+
+                <input type="checkbox" id="csharp" name="language" value="C#">
+                <label for="csharp">C#</label><br>
+
+                <input type="checkbox" id="java" name="language" value="Java">
+                <label for="java">Java</label><br>
+
+                <input type="checkbox" id="python" name="language" value="Python">
+                <label for="python">Python</label><br>
+
+                <input type="checkbox" id="javascript" name="language" value="JavaScript">
+                <label for="javascript">JavaScript</label><br>
+
+                <input type="checkbox" id="react" name="framework" value="React">
+                <label for="react">React</label><br>
+
+                <input type="checkbox" id="angular" name="framework" value="Angular">
+                <label for="angular">Angular</label><br>
+
+                <input type="checkbox" id="django" name="framework" value="Django">
+                <label for="django">Django</label><br>
+
+                <input type="checkbox" id="spring" name="framework" value="Spring">
+                <label for="spring">Spring</label><br>
+            </div><br>
+
+            <label for="comments">Any comments or suggestions:</label>
+            <textarea id="comments" name="comments" rows="2" placeholder="Enter your comments or suggestions"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

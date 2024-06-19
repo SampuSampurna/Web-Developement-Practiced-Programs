@@ -1,0 +1,68 @@
+<!--
+cubic-bezier(n,n,n,n) is a function in CSS used to define the timing function for animations or transitions. It allows you to create custom acceleration and deceleration curves, known as cubic Bézier curves, for smooth and natural animations.
+
+The function takes four parameters, each represented by the letter 'n', which are numerical values ranging from 0 to 1. These parameters define the shape of the cubic Bézier curve. Here's what each parameter represents:
+
+First parameter (n1): This controls the rate of change for the animation's initial acceleration. A value of 0 means no acceleration at the beginning, while a value of 1 represents maximum acceleration.
+
+Second parameter (n2): This determines the rate of change for the animation's deceleration. A value of 0 means no deceleration at the end, while a value of 1 represents maximum deceleration.
+
+Third parameter (n3): This sets the point in time where the animation reaches its fastest velocity. It influences the shape of the curve between the initial acceleration and maximum velocity.
+
+Fourth parameter (n4): This sets the point in time where the animation slows down from its maximum velocity to its end. It affects the shape of the curve between maximum velocity and the final deceleration.
+
+These parameters allow you to finely tune the timing and easing of your animations to achieve different effects. For example:
+
+A linear transition would be represented as cubic-bezier(0, 0, 1, 1), where the animation progresses at a constant speed.
+An ease-in transition might be represented as cubic-bezier(0.42, 0, 1, 1), where there is a gradual acceleration at the beginning.
+An ease-out transition might be represented as cubic-bezier(0, 0, 0.58, 1), where there is a gradual deceleration at the end.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Animation with cubic-bezier</title>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: dodgerblue;
+        position: relative;
+        animation: move 4s cubic-bezier(0.42, 0, 0.58, 1) infinite alternate;
+    }
+
+    @keyframes move {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: calc(100% - 100px);
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+
+<!--
+cubic-bezier(0.42, 0, 0.58, 1): This is a timing function used in CSS animations and transitions.
+
+The function represents a cubic Bézier curve, which determines how the animation progresses over time.
+
+The curve is defined by four control points, each represented by a pair of values (x, y), where x and y are numbers between 0 and 1.
+
+In this specific cubic Bézier curve:
+
+The first pair (0.42, 0) represents the control point for the beginning of the curve.
+
+The 0.42 value indicates a moderate acceleration rate at the beginning of the animation.
+The 0 value indicates no initial vertical movement (ease-in).
+The second pair (0.58, 1) represents the control point for the end of the curve.
+
+The 0.58 value indicates a moderate deceleration rate at the end of the animation.
+The 1 value indicates no vertical movement at the end (ease-out).
+-->

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GeeksForGeeks</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: darkgreen;
+        
+      } 
+      p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+        top:20px
+      } 
+      .container {
+        border: 1px solid white;
+        width: 600px;
+        height: auto;
+        margin: 0 auto; 
+        padding: 10px;
+      }
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 150px;
+      }
+      .button1, .button2 {
+        display: inline-block;
+        padding: 10px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 75px;
+        position: relative; 
+        height: 50px;
+      }
+      
+      .light-gray {
+        background-color: lightgray;
+      }
+      .light-green {
+        background-color: green;
+        color:white;
+      }
+      .red {
+        background-color: red;
+        color: white;
+      }
+      .blue {
+        background-color: blue;
+        color: white;
+      }
+      .black {
+        background-color: black;
+        color: white;
+      }
+      .white {
+        background-color: white;
+        border: 1px solid black;
+      }
+
+     
+      .button1:hover .icon,
+      .button2:hover .icon {
+        display: none;
+      }
+      .button1:hover .text::before {
+        content: "Shop";
+      }
+      .button2:hover .text::before {
+        content: "Setting"; 
+      }
+      .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+</head>
+<body>
+  <h1>GeeksforGeeks</h1>
+  <p>Semantic UI Button Types</p>
+  <div class="container">
+    <label for="button">Button:</label>
+    <button class="button light-gray">Trash</button>
+    <button class="button light-green">Subscribe</button>
+    <button class="button red">Unsubscribe</button>
+    <br>
+    <label for="basic">Basic:</label>
+    <button class="button white"><i style="font-size:15px" class="fa">&#xf007;</i>Add field</button>
+    <button class="button white">+ Follow</button>
+    <button class="button white">- Unfollow</button>
+    <br>
+    <label for="emphasis">Emphasis:</label>
+    <button class="button blue">Save</button>
+    <button class="button black">Delete</button>
+    <br>
+    <label for="animated">Animated:</label>
+    <button class="button1"><span class="icon"><i class="glyphicon glyphicon-shopping-cart" style="font-size: 20px;"></i></span><span class="text"></span></button>
+    <button class="button2"><span class="icon"><i class="material-icons" style="font-size: 20px;">&#xe8b8;</i></span><span class="text"></span></button>
+  </div>
+</body>
+</html>

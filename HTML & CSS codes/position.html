@@ -1,0 +1,85 @@
+<!--
+Position:
+ there are 5 types
+1.static: it doesnt change anything static means stable
+2.relative:it is positioned relative to its normal position(we can do changes like left,top,right,bottom to its normal position)
+3.fixed:it postion will be fixed even if the page is scrolls also & left,top,bottom,right values are added to fix the values.
+4.absolute: 
+     case1: if the absolute position is placed in the relative then the absolute content will be present inside the relative content only 
+     case2: if there is no relative positon then the absolute will be taken the body of the page moves along with page scrolling.
+  note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+5.sticky:it is the combination of both relative and fixed. sticky works as the content in the position sticky will be scrolled upto certain point then it will be fixed.
+
+-->
+
+<html>
+<head>
+<style>
+.static{
+postion:static;
+border:3px dotted tomato;
+}
+.relative{
+position:relative;
+padding:30px
+left:30px;
+border:3px solid black;
+}
+.fixed{
+postion:fixed;
+width:300px;
+border:3px dashed blue;
+}
+.absolute{
+position:absolute;
+border:3px double green;
+}
+
+.relative1 {
+ left:100px;
+  top:50px;
+  bottom:10px;
+  position: relative;
+  width: 400px;
+  height: 100px;
+  border: 3px solid #73AD21;
+  margin-bottom:50px;
+} 
+
+.absolute1 {
+  position: absolute;
+ 
+  right:0px;
+  width: 200px;
+  height: 50px;
+  border: 3px solid #73AD21;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+</style>
+</head>
+<body>
+<div class="static">static-solid border </div>
+<div class="relative">retalive-dotted border</div>
+<div class="fixed">fixed-dashed border</div>
+<div class="absolute">absolute-double border</div>
+<div class="relative1">relative as a parent of the absolute
+  <div class="absolute1">absolute inside the parent as relative</div>
+</div>
+<div class="sticky">this is sticky!</div>
+<div style="padding-bottom:2000px">scroll the page to see the working of the sticky position
+<h1>h1</h1>
+<h2>h2</h2>
+<h3>h3</h3>
+<h4>h4</h4>
+<h5>h5</h5>
+<h6>h6</h6></div>
+<body>
+</html>

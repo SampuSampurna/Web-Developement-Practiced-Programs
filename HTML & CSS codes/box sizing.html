@@ -1,0 +1,35 @@
+<!--
+Box-sizing: Defines how the width and height of an element are calculated: should they include padding and borders, or not
+without css box-sizing property:
+width and height of an element is calculated like this:
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+the problem is if you give padding and border it takes and add to width and height then the box will be appear bigger if u want to overcome from this u should use the box-sizing
+use box-sizing:border-box;
+-->
+
+<html>
+<head>
+<style>
+.box1{
+width:200px;
+height:100px;
+border:5px solid blue;
+padding:10px;
+margin:5px;
+}
+.box2{
+width:200px;
+height:100px;
+border:5px solid blue;
+padding:10px;
+margin:5px;
+box-sizing:border-box;
+}
+</style>
+</head>
+<body>
+<div class="box1">this box didnt use the box-sizing</div>
+<div class="box2">this box use the box-sizing</div>
+</body>
+</html>

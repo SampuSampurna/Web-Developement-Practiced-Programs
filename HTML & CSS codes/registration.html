@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmstack Free Trial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .header {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      text-align: center;
+      color: #333;
+    }
+
+    .link {
+      color: dodgerblue;
+      text-decoration: underline;
+    }
+
+    .form-container {
+      max-width: 400px;
+      width: 100%;
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .password-toggle {
+      position: relative;
+    }
+
+    .password-toggle input {
+      width: 100%;
+      padding-right: 40px; /* Adjusted padding */
+      box-sizing: border-box;
+    }
+
+    .password-toggle::after {
+      content: '\1F441'; /* Eye icon Unicode character */
+      position: absolute;
+      top: 60%;
+      right: 10px; /* Adjusted right position */
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .checkbox-group {
+      margin-top: 10px;
+    }
+
+    .checkbox-group label {
+      font-size: 12px;
+      color: dodgerblue;
+     
+    }
+
+    .button {
+      background-color: dodgerblue;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .password-toggle input[type="password"] {
+      font-family: 'Arial', sans-serif; /* Reset font for password dots */
+    }
+
+    .password-toggle input[type="password"] ~ .eye-icon {
+      display: none;
+    }
+
+    .password-toggle input[type="checkbox"]:checked ~ .eye-icon {
+      display: block;
+    }
+
+    .password-toggle input[type="checkbox"]:checked ~ input[type="password"] {
+      font-family: 'Arial', sans-serif; /* Reset font for password text */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    Try <b>Forms</b> free for 14 days
+  </div>
+
+  <div class="text">
+    Already have a Farmstack account? <span style="color:blue;">Start your trial in app </span>
+  </div>
+
+  <div class="form-container">
+    <form action="#" method="post">
+      <div class="form-group column">
+        <div style="flex: 1;">
+          <label for="firstName">FIRST NAME</label>
+          <input type="text" id="firstName" placeholder="John" required>
+        </div>
+        <div style="flex: 1;">
+          <label for="lastName">LAST NAME</label>
+          <input type="text" id="lastName" placeholder="Doe" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="workMail">WORK EMAIL</label>
+        <input type="email" id="workMail" placeholder="john@doe.com "required>
+      </div>
+      <div class="form-group password-toggle">
+        <label for="password">PASSWORD</label>
+  
+        <input type="password" id="password" placeholder="Password" required>
+        <div class="eye-icon"></div> <!-- Eye icon -->
+      </div>
+      <div class="form-group">
+        <label for="organizationName">ORGANIZATION NAME</label>
+        <input type="text" id="organizationName" placeholder="ABC Organization" required>
+      </div>
+      <div class="form-group">
+        <label for="organizationSize">ORGANIZATION SIZE</label>
+        <select id="organizationSize">
+          <option value="" disabled selected>-- Select --</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="industry">INDUSTRY</label>
+        <select id="industry">
+          <option value="" disabled selected>-- Select --</option>
+          <option value="agriculture">Agriculture</option>
+          <option value="technology">Technology</option>
+          <option value="healthcare">Healthcare</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="agreementCheckbox" required>
+        <label for="agreementCheckbox"><span style="color:black">I understand and agree to the </span><span style="color:blue; text-decoration: underline;">Farmstack privacy policy, software services Agreement, </span><span style="color:black">and</span> <span style="color:blue; text-decoration: underline;">Acceptable use Policy</span></label>
+      </div>
+      <button type="submit" class="button">Start Free Trial</button>
+    </form>
+  </div>
+
+</body>
+</html>
